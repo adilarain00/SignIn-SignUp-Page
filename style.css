@@ -1,0 +1,186 @@
+:root {
+  --primaryColor: #a7a1a1;
+  --secondaryColor: #ba4711;
+}
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2%;
+}
+
+/* left */
+#left {
+  background: #fff;
+  padding: 0px 5rem;
+  margin-left: -2rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+}
+
+.head .welcome {
+  padding-top: 3rem;
+  font-size: 16px;
+}
+
+.wel {
+  color: rgb(144, 137, 137);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: -15px;
+}
+
+.inf {
+  font-size: 30px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  color: var(--secondaryColor);
+}
+
+.top-line {
+  font-size: 14px;
+  padding-left: 10px;
+  color: var(--primaryColor);
+}
+
+.form ::placeholder {
+  color: var(--primaryColor);
+}
+
+.form input {
+  border-radius: 50px;
+  margin: 0px 0rem 12px 0rem;
+  font-size: 15px;
+}
+
+.form p {
+  color: var(--primaryColor);
+}
+
+.btn {
+  padding: 8px 8.7rem;
+  border-radius: 60px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.41);
+}
+
+.left-end .or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.left-end .or .bar {
+  width: 40%;
+  height: 1.5px;
+  color: var(--primaryColor);
+}
+
+.left-end .or span {
+  color: var(--primaryColor);
+  padding: 0 0.5rem;
+}
+
+.form p {
+  padding-top: 14px;
+  font-size: 14px;
+}
+
+.sign {
+  font-weight: bolder;
+  color: rgb(213, 95, 95);
+}
+
+.footer p {
+  font-size: 13px;
+  padding-top: 13px;
+  color: var(--primaryColor);
+}
+
+.social {
+  margin-top: -8px;
+  margin-bottom: 30px;
+}
+
+.footer i {
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px 10px 30px 10px;
+  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.47);
+}
+
+/* right */
+#right {
+  background: url(./Black-Wall-Seamless-Textures-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: -2rem;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.54);
+}
+
+#right {
+  color: #fff;
+  padding: 48% 4.5rem 0px 4.5rem;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* Media Quries */
+@media (max-width: 990px) {
+  .btn {
+    padding: 6px 4.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 6px 2.6rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 6px 2rem;
+  }
+
+  #left {
+    margin: 0px 1rem 0px 2.6rem;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #right {
+    margin: 0rem 1rem 2rem 2.5rem;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+    padding-bottom: 3rem;
+  }
+}
